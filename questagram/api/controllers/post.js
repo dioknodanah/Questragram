@@ -34,7 +34,7 @@ export const addPost =(req, res) => {
         const img = req.body.img || "";
 
         // const key = Object.keys(img);
-        // console.log(key)
+        // console.log("keys of img", key)
 
         const q = "INSERT INTO post (`upload_date`, `img`, `caption`, `userId` ) VALUES (?)";
 
